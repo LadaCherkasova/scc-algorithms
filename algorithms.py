@@ -180,7 +180,12 @@ for i in range(100, 301):
      if time_end3 - time_start3 <= 0.05:
           plt.scatter(i + edges, time_end3 - time_start3, color="red")
 
+plt.show()
+
 # 2. Analysis graph from http://snap.stanford.edu/data/email-Eu-core.html
+
+plt.xlabel("Сумма количества вершин и количества ребер")
+plt.ylabel("Время работы, с")
 
 file = open("email-Eu-core.txt", "r")
 web_graph = defaultdict(list)
